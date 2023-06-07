@@ -1,0 +1,42 @@
+.instructorCard{
+    display: flex;
+flex-direction: column;
+align-items: center;
+z-index: 9;
+}
+.instructorImg{
+    width: 285px;
+height: 400px;
+
+}
+.instructorImg:hover{
+    border: 2px solid orangered;
+}
+.instructorName{
+height: 41px;
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 170.9%;
+margin-top: 20px;
+/* identical to box height, or 41px */
+
+letter-spacing: 0.02em;
+
+color: rgba(255, 255, 255, 0.8);
+}
+.role{
+height: 27px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 170.9%;
+/* or 27px */
+
+letter-spacing: 0.02em;
+
+color: #FFFFFF;
+}

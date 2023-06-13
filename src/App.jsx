@@ -10,25 +10,25 @@ const workouts=[
   {
     id:1,
     type:"GYM",
-    imgUrl:"https://res.cloudinary.com/dxxh8iica/image/upload/v1685777546/Mask_group_tha0ic.png",
+    imgUrl:"https://res.cloudinary.com/dxxh8iica/image/upload/v1686639388/gym/type1_ki0jnt.png",
     desc:'Expect a heart-pumping workout that will leave you feeling energized and accomplished. Our supportive community of like-minded individuals.'
   },
   {
     id:2,
     type:"ZUMBA",
-    imgUrl:"https://res.cloudinary.com/dxxh8iica/image/upload/v1685777546/Mask_group1_ai9tre.png",
+    imgUrl:"https://res.cloudinary.com/dxxh8iica/image/upload/v1686639387/gym/type2_onk5xn.png",
     desc:'Expect a heart-pumping workout that will leave you feeling energized and accomplished. Our supportive community of like-minded individuals.'
   },
   {
     id:3,
     type:"YOGA",
-    imgUrl:"https://res.cloudinary.com/dxxh8iica/image/upload/v1685777545/Mask_group2_ok2gtw.png",
+    imgUrl:"https://res.cloudinary.com/dxxh8iica/image/upload/v1686639387/gym/type3_dqlcxp.png",
     desc:'Expect a heart-pumping workout that will leave you feeling energized and accomplished. Our supportive community of like-minded individuals.'
   },
   {
     id:4,
     type:"Martial Arts",
-    imgUrl:"https://res.cloudinary.com/dxxh8iica/image/upload/v1685777546/Mask_group3_mrxqcv.png",
+    imgUrl:"https://res.cloudinary.com/dxxh8iica/image/upload/v1686639387/gym/type4_hnlscv.png",
     desc:'Expect a heart-pumping workout that will leave you feeling energized and accomplished. Our supportive community of like-minded individuals.'
   },
 ]
@@ -44,7 +44,7 @@ const classes = [
     noOfClasses: "30",
     difficulty: "Beginner",
     imgUrl:
-      "https://res.cloudinary.com/dxxh8iica/image/upload/v1685787480/Rectangle_13_nkybit.png",
+      "https://res.cloudinary.com/dxxh8iica/image/upload/v1686639387/gym/class1_aqvluc.png",
   },
   {
     id: 2,
@@ -56,7 +56,7 @@ const classes = [
     noOfClasses: "45",
     difficulty: "Medium",
     imgUrl:
-      "https://res.cloudinary.com/dxxh8iica/image/upload/v1685787480/Rectangle_14_uzr222.png",
+      "https://res.cloudinary.com/dxxh8iica/image/upload/v1686639386/gym/class2_s8y9fg.png",
   },
   {
     id: 3,
@@ -68,7 +68,7 @@ const classes = [
     noOfClasses: "52",
     difficulty: "hard",
     imgUrl:
-      "https://res.cloudinary.com/dxxh8iica/image/upload/v1685787480/Rectangle_15_qp0cah.png",
+      "https://res.cloudinary.com/dxxh8iica/image/upload/v1686639386/gym/class3_wfuzc1.png",
   },
 ];
 
@@ -76,25 +76,25 @@ const instructor = [
   {
     id: 1,
     imgUrl:
-      "https://res.cloudinary.com/dxxh8iica/image/upload/v1685940775/Rectangle_17_yqlznq.png",
+      "https://res.cloudinary.com/dxxh8iica/image/upload/v1686639386/gym/tutuor_rpwi4w.png",
     name: "Jacob Jones",
   },
   {
     id: 2,
     imgUrl:
-      "https://res.cloudinary.com/dxxh8iica/image/upload/v1685940776/Rectangle_18_whxmzo.png",
+      "https://res.cloudinary.com/dxxh8iica/image/upload/v1686639386/gym/tutuor2_hvt9o5.png",
     name: "Leslie Alexander",
   },
   {
     id: 3,
     imgUrl:
-      "https://res.cloudinary.com/dxxh8iica/image/upload/v1685940775/Rectangle_19_nnit3g.png",
+      "https://res.cloudinary.com/dxxh8iica/image/upload/v1686639385/gym/tutuor3_okygb3.png",
     name: "Cameron Williamson",
   },
   {
     id: 4,
     imgUrl:
-      "https://res.cloudinary.com/dxxh8iica/image/upload/v1685940776/Rectangle_20_fkm71j.png",
+      "https://res.cloudinary.com/dxxh8iica/image/upload/v1686639386/gym/tutuor4_kwcrtg.png",
     name: "Jane Cooper",
   },
 ];
@@ -105,7 +105,7 @@ const feedback = [
     feedback:
       "Al-Balad is essentially Jeddah old town. It was once surrounded by a wall, but now only the gates re",
     imgUrl:
-      "https://res.cloudinary.com/dxxh8iica/image/upload/v1685948940/Ellipse_5_kpl4h5.png",
+      "https://res.cloudinary.com/dxxh8iica/image/upload/v1686639384/gym/feed_heaplv.png",
     name: "Courtney Henry",
   },
   {
@@ -113,7 +113,7 @@ const feedback = [
     feedback:
       "This a great historic site to visit. I rented a little cart and the driver was a really good friendl",
     imgUrl:
-      "https://res.cloudinary.com/dxxh8iica/image/upload/v1685948940/Ellipse_6_nruuvd.png",
+      "https://res.cloudinary.com/dxxh8iica/image/upload/v1686639384/gym/feed2_absfie.png",
     name: "Brooklyn Simmons",
   },
   {
@@ -121,7 +121,7 @@ const feedback = [
     feedback:
       "I had been to Al Balad several times. It is one of my favorite places in Jeddah. It is historic, ful",
     imgUrl:
-      "https://res.cloudinary.com/dxxh8iica/image/upload/v1685948940/Ellipse_7_qronu8.png",
+      "https://res.cloudinary.com/dxxh8iica/image/upload/v1686639384/gym/feed3_lxmkx2.png",
     name: "Jane Cooper",
   },
 ];
@@ -189,25 +189,6 @@ const setActiveCard=(id)=>{
 {workouts.map((each)=>(
   <WorkoutCard key={each.id} workout={each} activeWorkout={activeWorkout===each.id} setActiveCard={setActiveCard}/>
 ))}
-
-          {/* <div className="div0">
-            <img
-              className="div0img"
-              src="https://res.cloudinary.com/dxxh8iica/image/upload/v1685777546/Mask_group_tha0ic.png"
-              alt=""
-            />
-            <div className="div0Content">
-              <h4 className="div0Heding">GYM</h4>
-              <p className="div0para">
-                Expect a heart-pumping workout that will leave you feeling
-                energized and accomplished. Our supportive community of
-                like-minded individuals.
-              </p>
-            </div>
-          </div>
-          <div className="div1 gymName">Zumba</div>
-          <div className="div2 gymName">Yoga</div>
-          <div className="div3 gymName">Martial Arts</div> */}
         </div>
       </div>
 
@@ -220,7 +201,7 @@ const setActiveCard=(id)=>{
         </p>
         <img
           className="lifestyleImg"
-          src="https://res.cloudinary.com/dxxh8iica/image/upload/v1685783135/Rectangle_10_g4lpec.png"
+          src="https://res.cloudinary.com/dxxh8iica/image/upload/v1686639387/gym/center_zwtea4.png"
           alt=""
         />
         <span className="imgBg"></span>
@@ -259,19 +240,19 @@ const setActiveCard=(id)=>{
           </p>
           <div className="appSecBtnContainer">
             <img
-              src="https://res.cloudinary.com/dxxh8iica/image/upload/v1685942634/image_13_ji5cf6.png"
+              src="https://res.cloudinary.com/dxxh8iica/image/upload/v1686640029/gym/playstore_f8qzum.png"
               alt=""
               className="btnImg"
             />
             <img
-              src="https://res.cloudinary.com/dxxh8iica/image/upload/v1685942633/image_14_miqwmo.png"
+              src="https://res.cloudinary.com/dxxh8iica/image/upload/v1686640029/gym/apple_store_aqtv1u.png"
               alt=""
               className="btnImg"
             />
           </div>
         </div>
         <img
-          src="https://res.cloudinary.com/dxxh8iica/image/upload/v1685942635/Group_11_hjcpns.png"
+          src="https://res.cloudinary.com/dxxh8iica/image/upload/v1686639385/gym/mobile_g8fqrt.png"
           alt=""
           className="appSecRightImg"
         />
@@ -325,7 +306,7 @@ const setActiveCard=(id)=>{
         <div className="footerDiv">
         <p className="logo">LOGO</p>
         <p className="footerPara">Join us today and experience the transformative power of our fitness classes. Don't wait to start your fitness journey. Take the first step towards a healthier, stronger you. Let's sweat, have fun, and make fitness a way of life together!</p>
-        <img src="https://res.cloudinary.com/dxxh8iica/image/upload/v1685957779/Frame_361_llulvu.png" alt="" className="footerIcons" />
+        <img src="https://res.cloudinary.com/dxxh8iica/image/upload/v1686640029/gym/social_icon_czmvq1.png" alt="" className="footerIcons" />
         </div>
         <p className="footerLast">SPYRO 2023. All rights reserved.</p>
       </footer>

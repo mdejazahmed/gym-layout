@@ -19,7 +19,7 @@ background-color: #18171a;
   width: 100%;
   height: 960px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("https://res.cloudinary.com/dxxh8iica/image/upload/v1685773778/Rectangle_4_moljt3.png");
+    url("https://res.cloudinary.com/dxxh8iica/image/upload/v1686639393/gym/hero_ltzkqh.png");
   background-size: cover;
 }
 .header {
@@ -590,7 +590,7 @@ border-bottom: 5px solid orangered;
   bottom: 0;
 
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("https://res.cloudinary.com/dxxh8iica/image/upload/v1685956810/Rectangle_49_wm3dxt.png");
+    url("https://res.cloudinary.com/dxxh8iica/image/upload/v1686639385/gym/footer_b0kzlx.png");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
